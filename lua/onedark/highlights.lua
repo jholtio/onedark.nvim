@@ -131,8 +131,8 @@ hl.syntax = {
     Title = colors.Cyan,
     Tag = colors.Green,
     Delimiter = colors.LightGrey,
-    Comment = {fg = c.grey, fmt = cfg.code_style.comments},
-    SpecialComment = {fg = c.grey, fmt = cfg.code_style.comments},
+    Comment = {fg = c.comment, fmt = cfg.code_style.comments},
+    SpecialComment = {fg = c.comment, fmt = cfg.code_style.comments},
     Todo = {fg = c.red, fmt = cfg.code_style.comments}
 }
 
@@ -144,7 +144,7 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@attribute.typescript"] = colors.Blue,
         ["@boolean"] = colors.Orange,
         ["@character"] = colors.Orange,
-        ["@comment"] = {fg = c.grey, fmt = cfg.code_style.comments},
+        ["@comment"] = {fg = c.comment, fmt = cfg.code_style.comments},
         ["@comment.todo"] = {fg = c.red, fmt = cfg.code_style.comments},
         ["@comment.todo.unchecked"] = {fg = c.red, fmt = cfg.code_style.comments},
         ["@comment.todo.checked"] = {fg = c.green, fmt = cfg.code_style.comments},
@@ -284,7 +284,7 @@ else
         TSAttribute = colors.Cyan,
         TSBoolean = colors.Orange,
         TSCharacter = colors.Orange,
-        TSComment = {fg = c.grey, fmt = cfg.code_style.comments},
+        TSComment = {fg = c.comment, fmt = cfg.code_style.comments},
         TSConditional = {fg = c.purple, fmt = cfg.code_style.keywords},
         TSConstant = colors.Orange,
         TSConstBuiltin = colors.Orange,
@@ -859,7 +859,7 @@ hl.langs.vim = {
     vimMapLhs = colors.Fg,
     vimMapRhs = colors.Blue,
     vimVar = {fg = c.fg, fmt = cfg.code_style.variables},
-    vimCommentTitle = {fg = c.light_grey, fmt = cfg.code_style.comments},
+    vimCommentTitle = {fg = c.comment, fmt = cfg.code_style.comments},
 }
 
 local lsp_kind_icons_color = {
